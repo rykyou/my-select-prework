@@ -9,7 +9,6 @@ def my_select(collection)
     else 
       i += 1 
     end 
-  
   end 
   new_collection
 end
