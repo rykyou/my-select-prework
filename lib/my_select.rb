@@ -6,10 +6,10 @@ def my_select(collection)
     yield collection[i]
     if collection[i] == true  
       new_collection << collection[i]
-      new_collection << true_element
       i += 1 
     else 
       i += 1 
     end 
   end 
+  new_collection
 end
