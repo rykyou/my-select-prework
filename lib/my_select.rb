@@ -3,13 +3,12 @@ def my_select(collection)
   new_collection = []
   
   while i < collection.length 
-    yield collection[i]
-    if collection[i] == true  
-      true_element = collection[i]
-      new_collection << true_element
+    if yield(collection[i])
+      new_collection << collection[i]
       i += 1 
     else 
       i += 1 
     end 
   end 
+  new_collection
 end
